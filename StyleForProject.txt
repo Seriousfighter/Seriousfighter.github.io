@@ -1,0 +1,65 @@
+Colors:
+
+Background: bg-gray-900 or bg-black for dark backgrounds.
+Primary Button: Use bg-green-500 for active buttons with hover:bg-green-600 for hover effects.
+Text:
+Headings: text-white for contrast against dark backgrounds.
+Subtext: text-gray-400 for secondary text or descriptions.
+Card Backgrounds: Use bg-gray-800 with slight transparency like bg-gray-800/70 for overlays.
+Accent Colors: Use text-yellow-500 or text-green-400 for highlighted elements.
+Typography:
+
+Font Family: Use font-sans with a clean, modern look.
+Font Sizes:
+Headings: text-4xl for main headings, text-2xl for section headings.
+Subheadings: text-lg with font-medium.
+Body Text: text-sm md:text-base for readability.
+Buttons:
+
+Default Button: bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-all.
+Secondary Button: bg-white text-black border border-gray-300 font-medium py-3 px-6 rounded-lg hover:bg-gray-200 transition-all.
+Spacing & Layout:
+
+Use py-8 or py-16 for section padding.
+px-4 for mobile spacing, with md:px-8 for desktop.
+Flexbox Utilities: flex items-center justify-center for centering elements.
+
+example codes: 
+//hero section
+<template>
+  <div class="bg-gray-900 text-white py-16 px-8 md:px-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+      <div class="space-y-4 max-w-lg">
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Empower your tech projects
+        </h1>
+        <p class="text-lg text-gray-400">
+          Explore our tech solutions and optimize your workflows.
+        </p>
+        <div class="flex space-x-4">
+          <button class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-all">
+            Get started
+          </button>
+          <button class="bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition-all">
+            Learn more
+          </button>
+        </div>
+      </div>
+      <div>
+        <img src="/path-to-illustration.png" alt="Illustration" class="w-full max-w-md md:max-w-lg" />
+      </div>
+    </div>
+  </div>
+</template>
+ //card component
+<template>
+  <div class="bg-gray-800 rounded-lg shadow-lg p-6 space-y-4 text-white">
+    <h3 class="text-xl font-semibold">TechSaver</h3>
+    <p class="text-sm text-gray-400">
+      Advanced tools to streamline processes and save costs on tech operations.
+    </p>
+    <button class="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-all">
+      Start now
+    </button>
+  </div>
+</template>
